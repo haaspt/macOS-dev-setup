@@ -33,15 +33,15 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 # Install Bash 4.
-brew install bash
-brew tap homebrew/versions
-brew install bash-completion2
+# brew install bash
+# brew tap homebrew/versions
+# brew install bash-completion2
 # We installed the new shell, now we have to activate it
-echo "Adding the newly installed shell to the list of allowed shells"
+# echo "Adding the newly installed shell to the list of allowed shells"
 # Prompts for password
-sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+# sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
-chsh -s /usr/local/bin/bash
+# chsh -s /usr/local/bin/bash
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -57,10 +57,10 @@ brew install python
 brew install python3
 
 # Install ruby-build and rbenv
-brew install ruby-build
-brew install rbenv
-LINE='eval "$(rbenv init -)"'
-grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
+# brew install ruby-build
+# brew install rbenv
+# LINE='eval "$(rbenv init -)"'
+# grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -141,26 +141,26 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+# brew cask install --appdir="/Applications" alfred
+# brew cask install --appdir="~/Applications" iterm2
+# brew cask install --appdir="~/Applications" java
+# brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
+# brew cask install --appdir="/Applications" sublime-text
+# brew cask install --appdir="/Applications" atom
+# brew cask install --appdir="/Applications" virtualbox
+# brew cask install --appdir="/Applications" vagrant
+# brew cask install --appdir="/Applications" macdown
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" 1password
+# brew cask install --appdir="/Applications" google-chrome
+# brew cask install --appdir="/Applications" firefox
+# brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" slack
+# brew cask install --appdir="/Applications" dropbox
+# brew cask install --appdir="/Applications" evernote
+# brew cask install --appdir="/Applications" 1password
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 
@@ -168,8 +168,8 @@ brew cask install --appdir="/Applications" 1password
 #brew cask install --appdir="/Applications" mactex
 
 # Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+# brew install docker
+# brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
