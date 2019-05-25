@@ -15,3 +15,4 @@ pip3 install sqlalchemy
 pip3 install geopy
 pip3 install requests
 pip3 install pylint
+pip3 install virtualenv
